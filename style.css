@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+#navbar {
+  position:fixed;
+  top: 0;
+  width: 100%;
+  justify-content: flex-end;
+  width:100%;
+  background-color: rgb(219, 59, 81);
+  color: white;
+  font-family: 'Baloo Bhaina 2', cursive;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration:none;
+  list-style-type: none;
+  color: white;
+}
+#navbar ul a {
+  display: block;
+  font-size: 1.3em;
+  padding: 3rem 2rem 0.5rem 2rem;
+ 
+  text-decoration:none;
+color: white;
+}
+#navbar ul a:after {
+content: '';
+  width: 0px;
+  height: 3px;
+  display: block;
+  background: white;
+  transition: 300ms
+}
+#navbar ul a:hover:after {
+width: 100%;
+}
+#welcome-section {
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  padding-top:3em;
+  height:20rem;
+  color: white;
+  font-family: 'Manjari', sans-serif;
+  
+
+}
+#welcome-section h4 {
+ font-size: 1.1em;
+  font-weight:400;
+}
+#welcome-section p {
+  padding:1.5em;
+  font-weight:200;
+}
+#projects {
+  margin: 0 auto;
+  width:95%;
+  background-color: rgb(97, 65, 115);
+  border-radius:5px;
+  text-align: center;
+}
+#project-header  {
+ text-align: center;
+  padding: 10rem 2rem;
+  color: white;
+  font-family: 'Manjari', sans-serif;
+  line-height:3em;
+  padding:2em;
+}
+#project-header h6 {
+  
+  font-size: 1em;
+  font-weight: 100;
+}
+#project-header h3 {
+   
+  font-size: 1.5em;
+  font-weight: 700;
+}
+#project-grid {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 4vw;
+}
+.project-tile {
+  display:block;
+  border: 2px solid lightgrey;
+  height: 18vw;
+  width: 28%;
+ background: rgb(50, 51, 53);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  
+}
+.project-tile a {
+  text-decoration: none;
+}
+.preview {
+  height:80%;
+  width: 100%;
+  object-fit: cover;
+}
+.project-title {
+  
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Baloo Bhaina 2', cursive;
+  font-size: 1.3vw;
+  text-align: center;
+  color:white;
+  padding-top: 0.4em;
+  
+}
+.code {
+  color: rgb(50, 51, 53);
+  transition: color 0.3s ease-out;
+  
+}
+
+.project-title:hover .code {
+  color: #ff7f50;
+}
+.my-button {
+  display:inline-block;
+  
+  
+	box-shadow: -1px 0px 0px 0px #fbafe3;
+	background:linear-gradient(to bottom, #db2b51 5%, #ef027d 100%);
+	background-color:#db2b51;
+	border-radius:6px;
+	border:1px solid #ee1eb5;
+	
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Manjari', sans-serif;
+	font-size:1.1vw;
+	font-weight:bold;
+	padding:1.1vw 1.6vw;
+	text-decoration:none;
+  margin-bottom: 3rem;
+	
+}
+.my-button:hover {
+	background:linear-gradient(to bottom, #ef027d 5%, #db2b51 100%);
+	background-color:#ef027d;
+}
+.my-button:active {
+	position:relative;
+	top:1px;
+}
+
