@@ -3,16 +3,17 @@
   margin: 0;
   padding: 0;
 }
-main {
+
+html {
   background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+ width: 100%;
 }
+
 #navbar {
   position:fixed;
   top: 0;
   width: 100%;
-  justify-content: flex-end;
-  width:100%;
   background-color: rgb(219, 59, 81);
   color: white;
   font-family: 'Baloo Bhaina 2', cursive;
@@ -26,6 +27,9 @@ main {
   list-style-type: none;
   color: white;
 }
+
+  
+
 #navbar ul a {
   display: block;
   font-size: 1.3em;
@@ -51,7 +55,7 @@ width: 100%;
   justify-content:center;
   align-items:center;
   padding-top:3em;
-  height:20rem;
+  height:20em;
   color: white;
   font-family: 'Manjari', sans-serif;
   
@@ -136,29 +140,168 @@ width: 100%;
 .my-button {
   display:inline-block;
   
-  
-	box-shadow: -1px 0px 0px 0px #fbafe3;
-	background:linear-gradient(to bottom, #db2b51 5%, #ef027d 100%);
-	background-color:#db2b51;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+
 	border-radius:6px;
-	border:1px solid #ee1eb5;
-	
+	border:1px solid ;
 	cursor:pointer;
 	color:#ffffff;
 	font-family: 'Manjari', sans-serif;
 	font-size:1.1vw;
 	font-weight:bold;
-	padding:1.1vw 1.6vw;
+	padding: 1rem 2rem;
 	text-decoration:none;
   margin-bottom: 3rem;
+  transition: background 0.5s ease-out;
 	
 }
 .my-button:hover {
-	background:linear-gradient(to bottom, #ef027d 5%, #db2b51 100%);
-	background-color:#ef027d;
+	background: rgb(219, 59, 81);
+  
 }
 .my-button:active {
 	position:relative;
 	top:1px;
 }
 
+#contact {
+  
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: white;
+  font-family: 'Manjari', sans-serif;
+  line-height:3em;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 5px solid rgb(219, 59, 81);
+}
+#contact p {
+  padding-bottom: 3rem;
+}
+.contact-logo {
+  display: inline;
+  padding-right:10px;
+  margin-top: 5px;
+  width: 42px;
+  height: 30px;
+
+  
+  
+}
+.contact-links {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  color:white;
+  margin: 0 auto;
+  font-size:1.3vw;
+  
+  
+}
+.contact-box {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease-out;
+ 
+}
+.contact-box:hover {
+  font-weight: 700;
+transform: translateY(8px);
+}
+footer {
+  color: white;
+  height: 120px;
+  font-family: 'Manjari', sans-serif;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 30px;
+}
+footer a{
+  color:white;
+}
+@media (max-width: 650px) {
+  
+  
+  #navbar ul {
+    display:block;
+  
+  }
+  #navbar ul a {
+    font-size:1em;
+ padding: 4px;
+    width: 50%;
+   margin: 0 auto;
+    text-align: center
+  }
+  
+  
+  #welcome-section h1 {
+    font-size: 1.5em;
+  }
+ #project-header  {
+ text-align: center;
+  line-height:2em;
+  padding:2em;
+}
+#project-header h6 {
+  
+  font-size: 0.9em;
+ 
+}
+#project-header h3 {
+   
+  font-size: 1.1em;
+  }
+  #project-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-tile {
+  margin-bottom: 30px;
+  height: 14em;
+  width: 82%;
+   
+  }
+  .project-title {
+    font-size: 1em;
+  }
+  .my-button {
+    font-size: 1em;
+  }
+  #contact {
+    display: block;
+    margin: 0 auto;
+  }
+  .contact-links {
+    display: block;
+    width: 30%;
+    font-size: 0.8em;
+   
+  }
+  .contact-box {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+  footer {
+    display: block;
+    font-size: 0.7em;
+    height: 90px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  footer p {
+    padding-bottom: 10px;
+    
+  }
+  }
+  
+  
